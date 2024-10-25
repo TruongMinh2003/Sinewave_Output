@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_1_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="design_1_wrapper" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="245.400001 us"></ZoomEndTime>
+      <Cursor1Time time="46.968150 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="194"></NameColumnWidth>
+      <ValueColumnWidth column_width="115"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/design_1_wrapper/MCLK_0" type="logic">
+      <obj_property name="ElementShortName">MCLK_0</obj_property>
+      <obj_property name="ObjectShortName">MCLK_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/BCLK_0" type="logic">
+      <obj_property name="ElementShortName">BCLK_0</obj_property>
+      <obj_property name="ObjectShortName">BCLK_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/i2s_interface_0/inst/bclk_counter" type="array">
+      <obj_property name="ElementShortName">bclk_counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bclk_counter[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/LRCLK_0" type="logic">
+      <obj_property name="ElementShortName">LRCLK_0</obj_property>
+      <obj_property name="ObjectShortName">LRCLK_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/i2s_interface_0/inst/lrclk_counter" type="array">
+      <obj_property name="ElementShortName">lrclk_counter[8:0]</obj_property>
+      <obj_property name="ObjectShortName">lrclk_counter[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/sdata_0" type="logic">
+      <obj_property name="ElementShortName">sdata_0</obj_property>
+      <obj_property name="ObjectShortName">sdata_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/dds_compiler_wave/m_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/i2s_interface_0/inst/bit_cnt" type="array">
+      <obj_property name="ElementShortName">bit_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_cnt[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/control_clock_0/SCL" type="logic">
+      <obj_property name="ElementShortName">SCL</obj_property>
+      <obj_property name="ObjectShortName">SCL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/control_clock_0/SDA" type="logic">
+      <obj_property name="ElementShortName">SDA</obj_property>
+      <obj_property name="ObjectShortName">SDA</obj_property>
+   </wvobject>
+</wave_config>
