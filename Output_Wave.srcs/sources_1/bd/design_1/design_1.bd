@@ -1,0 +1,525 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x6EB7C2EBF38CF1E",
+      "device": "xc7a200tsbg484-1",
+      "gen_directory": "../../../../Output_Wave.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "dds_compiler_wave": "",
+      "dds_compiler_phase": "",
+      "reset_inv_0": "",
+      "i2s_interface_0": "",
+      "led_interface_0": "",
+      "control_clock_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "MCLK_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "24573991",
+            "value_src": "ip_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "BCLK_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "LRCLK_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "sdata_0": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "SCL_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "i2c_DONE": {
+        "direction": "O"
+      },
+      "SDA_0": {
+        "direction": "O"
+      },
+      "i2c_start": {
+        "direction": "I"
+      },
+      "led_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "448.322"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "335.207"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "24.576"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "34.250"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "27.875"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "5"
+          },
+          "RESET_BOARD_INTERFACE": {
+            "value": "reset"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          },
+          "USE_LOCKED": {
+            "value": "true"
+          }
+        }
+      },
+      "dds_compiler_wave": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "design_1_dds_compiler_0_0",
+        "xci_path": "ip\\design_1_dds_compiler_0_0\\design_1_dds_compiler_0_0.xci",
+        "inst_hier_path": "dds_compiler_wave",
+        "parameters": {
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "Latency": {
+            "value": "6"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "Output_Width": {
+            "value": "16"
+          },
+          "PINC1": {
+            "value": "0"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "PartsPresent": {
+            "value": "SIN_COS_LUT_only"
+          },
+          "Phase_Width": {
+            "value": "16"
+          },
+          "S_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          }
+        }
+      },
+      "dds_compiler_phase": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "design_1_dds_compiler_1_0",
+        "xci_path": "ip\\design_1_dds_compiler_1_0\\design_1_dds_compiler_1_0.xci",
+        "inst_hier_path": "dds_compiler_phase",
+        "parameters": {
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "Latency": {
+            "value": "1"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Width": {
+            "value": "3"
+          },
+          "PINC1": {
+            "value": "1000"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "PartsPresent": {
+            "value": "Phase_Generator_only"
+          },
+          "Phase_Width": {
+            "value": "16"
+          },
+          "S_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          }
+        }
+      },
+      "reset_inv_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_1_reset_inv_0_0",
+        "xci_path": "ip\\design_1_reset_inv_0_0\\design_1_reset_inv_0_0.xci",
+        "inst_hier_path": "reset_inv_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "i2s_interface_0": {
+        "vlnv": "xilinx.com:module_ref:i2s_interface:1.0",
+        "xci_name": "design_1_i2s_interface_0_1",
+        "xci_path": "ip\\design_1_i2s_interface_0_1\\design_1_i2s_interface_0_1.xci",
+        "inst_hier_path": "i2s_interface_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "i2s_interface",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "rst": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "MCLK": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "24573991",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "BCLK": {
+            "direction": "O"
+          },
+          "LRCLK": {
+            "direction": "O"
+          },
+          "dds_data_left": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "dds_data_right": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "sdata": {
+            "direction": "O"
+          }
+        }
+      },
+      "led_interface_0": {
+        "vlnv": "xilinx.com:module_ref:led_interface:1.0",
+        "xci_name": "design_1_led_interface_0_1",
+        "xci_path": "ip\\design_1_led_interface_0_1\\design_1_led_interface_0_1.xci",
+        "inst_hier_path": "led_interface_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "led_interface",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sw": {
+            "direction": "I"
+          },
+          "led": {
+            "direction": "O"
+          }
+        }
+      },
+      "control_clock_0": {
+        "vlnv": "xilinx.com:module_ref:control_clock:1.0",
+        "xci_name": "design_1_control_clock_0_4",
+        "xci_path": "ip\\design_1_control_clock_0_4\\design_1_control_clock_0_4.xci",
+        "inst_hier_path": "control_clock_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "control_clock",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i2c_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "start": {
+            "direction": "I"
+          },
+          "SCL": {
+            "direction": "O"
+          },
+          "SDA": {
+            "direction": "IO"
+          },
+          "config_done": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "dds_compiler_phase_M_AXIS_PHASE": {
+        "interface_ports": [
+          "dds_compiler_phase/M_AXIS_PHASE",
+          "dds_compiler_wave/S_AXIS_PHASE"
+        ]
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "dds_compiler_phase/aclk",
+          "dds_compiler_wave/aclk",
+          "clk_wiz_0/clk_in1",
+          "control_clock_0/i2c_clk"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "MCLK_0",
+          "i2s_interface_0/MCLK"
+        ]
+      },
+      "dds_compiler_wave_m_axis_data_tdata": {
+        "ports": [
+          "dds_compiler_wave/m_axis_data_tdata",
+          "i2s_interface_0/dds_data_left",
+          "i2s_interface_0/dds_data_right"
+        ]
+      },
+      "i2c_start_1": {
+        "ports": [
+          "i2c_start",
+          "led_interface_0/sw",
+          "control_clock_0/start"
+        ]
+      },
+      "i2s_interface_0_BCLK": {
+        "ports": [
+          "i2s_interface_0/BCLK",
+          "BCLK_0"
+        ]
+      },
+      "i2s_interface_0_LRCLK": {
+        "ports": [
+          "i2s_interface_0/LRCLK",
+          "LRCLK_0"
+        ]
+      },
+      "i2s_interface_0_sdata": {
+        "ports": [
+          "i2s_interface_0/sdata",
+          "sdata_0"
+        ]
+      },
+      "led_interface_0_led": {
+        "ports": [
+          "led_interface_0/led",
+          "led_0"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "reset_inv_0/Op1"
+        ]
+      },
+      "reset_inv_0_Res": {
+        "ports": [
+          "reset_inv_0/Res",
+          "clk_wiz_0/reset",
+          "i2s_interface_0/rst",
+          "control_clock_0/reset"
+        ]
+      }
+    }
+  }
+}

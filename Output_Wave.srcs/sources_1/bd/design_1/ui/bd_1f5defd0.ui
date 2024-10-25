@@ -1,0 +1,43 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.25",
+   "Default View_TopLeft":"-138,-56",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -10 -y 100 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -10 -y 230 -defaultsOSRD
+preplace port port-id_MCLK_0 -pg 1 -lvl 4 -x 980 -y 420 -defaultsOSRD
+preplace port port-id_BCLK_0 -pg 1 -lvl 4 -x 980 -y 60 -defaultsOSRD
+preplace port port-id_LRCLK_0 -pg 1 -lvl 4 -x 980 -y 90 -defaultsOSRD
+preplace port port-id_sdata_0 -pg 1 -lvl 4 -x 980 -y 120 -defaultsOSRD
+preplace port port-id_SCL_0 -pg 1 -lvl 4 -x 980 -y 20 -defaultsOSRD
+preplace port port-id_i2c_DONE -pg 1 -lvl 4 -x 980 -y 180 -defaultsOSRD
+preplace port port-id_SDA_0 -pg 1 -lvl 4 -x 980 -y 150 -defaultsOSRD
+preplace port port-id_i2c_start -pg 1 -lvl 0 -x -10 -y 370 -defaultsOSRD
+preplace port port-id_led_0 -pg 1 -lvl 4 -x 980 -y 360 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 490 -y 300 -defaultsOSRD
+preplace inst dds_compiler_wave -pg 1 -lvl 2 -x 490 -y 110 -defaultsOSRD
+preplace inst dds_compiler_phase -pg 1 -lvl 1 -x 160 -y 100 -defaultsOSRD
+preplace inst reset_inv_0 -pg 1 -lvl 1 -x 160 -y 230 -defaultsOSRD
+preplace inst i2s_interface_0 -pg 1 -lvl 3 -x 820 -y 90 -defaultsOSRD
+preplace inst led_interface_0 -pg 1 -lvl 3 -x 820 -y 360 -defaultsOSRD
+preplace inst control_clock_0 -pg 1 -lvl 3 -x 820 -y 240 -defaultsOSRD
+preplace netloc clk_1 1 0 3 20 40 310 220 NJ
+preplace netloc clk_wiz_0_clk_out1 1 2 2 670 420 NJ
+preplace netloc dds_compiler_wave_m_axis_data_tdata 1 2 1 680 100n
+preplace netloc i2c_start_1 1 0 3 NJ 370 NJ 370 680
+preplace netloc i2s_interface_0_BCLK 1 3 1 960J 60n
+preplace netloc i2s_interface_0_LRCLK 1 3 1 NJ 90
+preplace netloc i2s_interface_0_sdata 1 3 1 960J 110n
+preplace netloc led_interface_0_led 1 3 1 NJ 360
+preplace netloc reset_1 1 0 1 NJ 230
+preplace netloc reset_inv_0_Res 1 1 2 320 230 660
+preplace netloc dds_compiler_phase_M_AXIS_PHASE 1 1 1 NJ 100
+levelinfo -pg 1 -10 160 490 820 980
+pagesize -pg 1 -db -bbox -sgen -130 0 1100 440
+"
+}
+{
+   "da_board_cnt":"1"
+}

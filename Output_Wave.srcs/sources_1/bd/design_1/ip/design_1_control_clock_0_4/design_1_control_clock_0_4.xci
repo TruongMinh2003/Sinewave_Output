@@ -1,0 +1,104 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "design_1_control_clock_0_4",
+    "cell_name": "control_clock_0",
+    "component_reference": "xilinx.com:module_ref:control_clock:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../Output_Wave.gen/sources_1/bd/design_1/ip/design_1_control_clock_0_4",
+    "parameters": {
+      "component_parameters": {
+        "I2C_ADDRESS": [ { "value": "\"0111010\"", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "I2C_WRITE": [ { "value": "\"0\"", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "I2C_FREQ_DIV": [ { "value": "1000", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "IDLE": [ { "value": "\"000\"", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "START": [ { "value": "\"001\"", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "SEND_ADDR": [ { "value": "\"010\"", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "SEND_DATA": [ { "value": "\"011\"", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "STOP": [ { "value": "\"100\"", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "DONE": [ { "value": "\"101\"", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "DAC_REG_ADDR": [ { "value": "\"00000000\"", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "DAC_ENABLE_VAL": [ { "value": "\"11000011\"", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "Component_Name": [ { "value": "design_1_control_clock_0_4", "resolve_type": "user", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "I2C_ADDRESS": [ { "value": "\"0111010\"", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "I2C_WRITE": [ { "value": "\"0\"", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "I2C_FREQ_DIV": [ { "value": "1000", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "IDLE": [ { "value": "\"000\"", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "START": [ { "value": "\"001\"", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "SEND_ADDR": [ { "value": "\"010\"", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "SEND_DATA": [ { "value": "\"011\"", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "STOP": [ { "value": "\"100\"", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "DONE": [ { "value": "\"101\"", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "DAC_REG_ADDR": [ { "value": "\"00000000\"", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "DAC_ENABLE_VAL": [ { "value": "\"11000011\"", "resolve_type": "generated", "format": "bitString", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "artix7" } ],
+        "BASE_BOARD_PART": [ { "value": "digilentinc.com:nexys_video:part0:1.2" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7a200t" } ],
+        "PACKAGE": [ { "value": "sbg484" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../Output_Wave.gen/sources_1/bd/design_1/ip/design_1_control_clock_0_4" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2023.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "i2c_clk": [ { "direction": "in" } ],
+        "reset": [ { "direction": "in" } ],
+        "start": [ { "direction": "in" } ],
+        "SCL": [ { "direction": "out" } ],
+        "SDA": [ { "direction": "inout" } ],
+        "config_done": [ { "direction": "out" } ]
+      },
+      "interfaces": {
+        "reset": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_HIGH", "value_src": "ip_propagated", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "reset" } ]
+          }
+        },
+        "i2c_clk": {
+          "vlnv": "xilinx.com:signal:clock:1.0",
+          "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "ASSOCIATED_RESET": [ { "value": "reset", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "FREQ_HZ": [ { "value": "100000000", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "design_1_clk", "value_src": "default_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_BUSIF": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_PORT": [ { "value": "", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "i2c_clk" } ]
+          }
+        }
+      }
+    }
+  }
+}
